@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Compiled and minified CSS -->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+    <title>ToDo</title>
+</head>
+<body>
+    
+
+  <nav>
+    <div class="nav-wrapper cyan accent-2">
+      <a href="#!" class="brand-logo center indigo-text text-darken-4">ToDo</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="sass.html"><i class="material-icons indigo-text text-darken-4">logout</i></a></li>
+      </ul>
+    </div>
+  </nav>
+  <div><h2 class="truncate center"> Add Your Task</h2></div>
+
+      <div class="container"><span>
+          <form action="votersdata.php" method="POST">
+                <label>Task Name</label><br>
+                <input placeholder="username" type="text" name="username"><br>
+                
+                <label>task</label><br>
+                <input placeholder="password" type="text" name="pw"><br>
+                <input  class="btn" type="submit" name="submit">
+                
+            </form>
+            </span>
+        </div>
+  <ul class="collapsible">
+        <li>
+      <div class="collapsible-header"><i class="material-icons">task</i>Task name</div>
+      <div class="collapsible-body"><span>
+this is my task
+            </span>
+            <i class="right material-icons">delete</i>
+            </div>
+        </li>
+  
+  </ul>
+        
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+      <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+      <script>
+          $(document).ready(function(){
+    $('.collapsible').collapsible();
+  });
+        
+      </script>
+
+</body>
+</html>
